@@ -1,6 +1,6 @@
 ---
 name: no-ai-slop
-description: Edit drafts into sharper, more human writing while preserving the writer's personal voice, or detect AI-slop patterns without rewriting. Use when the user wants a draft clearer, more direct, more opinionated, or less AI-sounding, or asks whether writing reads as AI.
+description: Edit drafts into sharper, more human writing while preserving the writer's personal voice, or detect AI-slop patterns without rewriting. Use when the user wants a draft clearer, more direct, more opinionated, or less AI-sounding, or asks whether writing reads as AI. Also triggers in French: « ça fait IA », « moins IA », « humaniser le texte », « on dirait du ChatGPT », « rends ça plus humain », « c'est trop marketing ».
 ---
 
 # No AI slop
@@ -95,3 +95,33 @@ Often-empty phrases: it's worth noting, it's important to note, at the end of th
 4. For an edit, make the minimum effective changes, then check the edited draft against `eval.md` yourself.
 5. If any check fails, fix the draft and run the checks again.
 6. Output the full edited draft and a short **What changed** section.
+
+
+---
+
+## Français — marqueurs constatés
+
+Ce qui précède est écrit pour l'anglais. Sur des documents rédigés en français, ce sont ces marqueurs-là qui sont réellement ressortis à l'usage.
+
+**Titres qui annoncent leur propre nombre.** « Les 3 raisons de… », « Les 5 points clés ». Nommer la chose suffit.
+
+**La figure « X, pas Y ».** « Ce n'est pas une brochure : c'est du concret », « Non pas un outil, mais une méthode ». Dire Y directement.
+
+**Tirets cadratins en excès.** Le français les supporte encore moins bien que l'anglais. Dans un texte court, aucun. Ailleurs, un ou deux au maximum, et seulement s'ils battent vraiment la virgule ou la parenthèse.
+
+**Le document qui commente sa propre rédaction.** « Ce dernier point mérite qu'on s'y arrête », « Comme nous l'avons vu plus haut », « Précisons que ». Si le point est clair, la phrase saute.
+
+**L'auto-notation.** « Le chiffre le plus important est… », « Le point vraiment décisif ». Montrer le fait et laisser le lecteur juger.
+
+**Le gras semé au milieu des phrases.** Un mot en gras tous les deux lignes ne hiérarchise plus rien. Réserver le gras aux vrais repères de lecture.
+
+**Deux-points à effet.** « Le détail qui change tout : la liste d'attente se gère seule. » Rédiger en phrase pleine.
+
+**Listes à puces systématiques.** Trois puces de six mots se lisent mieux en une phrase. Garder la liste quand les éléments sont réellement parallèles et nombreux.
+
+**Tournures d'ouverture creuses.** « Dans un monde en constante évolution », « À l'heure du numérique », « Il est essentiel de noter que », « Force est de constater », « Véritable atout ».
+
+**Clôtures récapitulatives.** « En conclusion », « Pour résumer », « En définitive », suivies d'un paragraphe qui redit le texte. Finir sur le dernier point concret ou sur l'action attendue.
+
+### Contrôle rapide
+Mesurer la variation du rythme plutôt que la juger à l'œil : longueur de chaque phrase en mots, puis min, max et écart-type. Un écart-type inférieur à 4 sur un texte de plus de vingt phrases signale une cadence trop régulière, qui est l'un des signaux les plus fiables.
